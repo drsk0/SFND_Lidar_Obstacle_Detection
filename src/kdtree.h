@@ -1,11 +1,9 @@
 /* \author Aaron Brown */
 // Quiz on implementing kd tree
+#ifndef KDTREE_H_
+#define KDTREE_H_
 
-// credits: this solution and data structure are following closely the solutions
-// given in the course.
-
-#include "../../render/render.h"
-
+#include "render/render.h"
 
 // Structure to represent node of kd tree
 struct Node {
@@ -30,7 +28,7 @@ struct KdTree {
 
   ~KdTree() { delete root; }
 
-  void insert(std::vector<float> point, int id) {
+  void insert(std::vector<float> &point, int id) {
     if (root == NULL) {
       root = new Node(point, id);
       return;
@@ -38,8 +36,8 @@ struct KdTree {
     insertHelper(root, 0, point, id);
   }
 
-  void insertHelper(Node *root, const int level, const std::vector<float> point,
-                    const int id) {
+  void insertHelper(Node *root, const int level,
+                    const std::vector<float> &point, const int id) {
     if (root == NULL)
       return;
     int ix = level % 2;
@@ -64,14 +62,15 @@ struct KdTree {
   }
 
   // return a list of point ids in the tree that are within distance of target
-  std::vector<int> search(std::vector<float> target, float distanceTol) const {
+  std::vector<int> search(const std::vector<float> &target,
+                          const float distanceTol) const {
     std::vector<int> acc;
     searchHelper(acc, root, 0, target, distanceTol);
     return acc;
   }
 
   void searchHelper(std::vector<int> &acc, const Node *root, const int level,
-                    const std::vector<float> target,
+                    const std::vector<float> &target,
                     const float distanceTol) const {
     if (root == NULL) {
       return;
@@ -98,3 +97,5 @@ struct KdTree {
     }
   }
 };
+
+#endif // KDTREE_H_

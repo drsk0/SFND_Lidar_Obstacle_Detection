@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/build",
+  "command": "/nix/store/i6lypi3l688pn6gkm9sxbg59isj20rfv-clang-wrapper-11.1.0/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DBOOST_DATE_TIME_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SERIALIZATION_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DDISABLE_PCAP -DDISABLE_PNG -Dkiss_fft_scalar=double -isystem /nix/store/xnadz8fmzf32dv33d681xmpd4qchh856-pcl-1.13.0/include/pcl-1.13 -isystem /nix/store/sn1bdim618wj94m23kba7v5lpvmyz302-eigen-3.4.0/include/eigen3 -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk/vtknlohmannjson/include -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk/vtkfreetype/include -g   -std=c++14 -msse4.2 -mfpmath=sse -march=native -o CMakeFiles/environment.dir/src/environment.cpp.o -c /home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/src/environment.cpp",
+  "file": "/home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/src/environment.cpp",
+  "output": "CMakeFiles/environment.dir/src/environment.cpp.o"
+},
+{
+  "directory": "/home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/build",
+  "command": "/nix/store/i6lypi3l688pn6gkm9sxbg59isj20rfv-clang-wrapper-11.1.0/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DBOOST_DATE_TIME_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SERIALIZATION_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DDISABLE_PCAP -DDISABLE_PNG -Dkiss_fft_scalar=double -isystem /nix/store/xnadz8fmzf32dv33d681xmpd4qchh856-pcl-1.13.0/include/pcl-1.13 -isystem /nix/store/sn1bdim618wj94m23kba7v5lpvmyz302-eigen-3.4.0/include/eigen3 -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk/vtknlohmannjson/include -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk/vtkfreetype/include -g   -std=c++14 -msse4.2 -mfpmath=sse -march=native -o CMakeFiles/environment.dir/src/render/render.cpp.o -c /home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/src/render/render.cpp",
+  "file": "/home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/src/render/render.cpp",
+  "output": "CMakeFiles/environment.dir/src/render/render.cpp.o"
+},
+{
+  "directory": "/home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/build",
+  "command": "/nix/store/i6lypi3l688pn6gkm9sxbg59isj20rfv-clang-wrapper-11.1.0/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DBOOST_DATE_TIME_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SERIALIZATION_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DDISABLE_PCAP -DDISABLE_PNG -Dkiss_fft_scalar=double -isystem /nix/store/xnadz8fmzf32dv33d681xmpd4qchh856-pcl-1.13.0/include/pcl-1.13 -isystem /nix/store/sn1bdim618wj94m23kba7v5lpvmyz302-eigen-3.4.0/include/eigen3 -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk/vtknlohmannjson/include -isystem /nix/store/93jkzzclbjcjwpdfv3vgv48a5mm4k7fv-vtk-9.2.6/include/vtk/vtkfreetype/include -g   -std=c++14 -msse4.2 -mfpmath=sse -march=native -o CMakeFiles/environment.dir/src/processPointClouds.cpp.o -c /home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/src/processPointClouds.cpp",
+  "file": "/home/drsk/sensor_fusion_course/SFND_Lidar_Obstacle_Detection/src/processPointClouds.cpp",
+  "output": "CMakeFiles/environment.dir/src/processPointClouds.cpp.o"
+}
+]
