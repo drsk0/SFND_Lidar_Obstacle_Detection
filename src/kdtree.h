@@ -40,7 +40,7 @@ struct KdTree {
                     const std::vector<float> &point, const int id) {
     if (root == NULL)
       return;
-    int ix = level % 2;
+    int ix = level % 3;
 
     if (point[ix] < root->point[ix]) {
       if (root->left == NULL) {
@@ -76,11 +76,13 @@ struct KdTree {
       return;
     }
 
-    int ix = level % 2;
+    int ix = level % 3;
     if (abs(root->point[0] - target[0]) <= distanceTol &&
-        abs(root->point[1] - target[1]) <= distanceTol) {
+        abs(root->point[1] - target[1]) <= distanceTol &&
+        abs(root->point[2] - target[2]) <= distanceTol) {
       if (pow(root->point[0] - target[0], 2) +
-              pow(root->point[1] - target[1], 2) <=
+              pow(root->point[1] - target[1], 2) +
+              pow(root->point[2] - target[2], 2) <=
           pow(distanceTol, 2)) {
         acc.push_back(root->id);
       }
