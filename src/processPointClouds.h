@@ -332,6 +332,8 @@ ProcessPointClouds<PointT>::Clustering2(
       euclideanCluster(points, tree, clusterTolerance);
 
   for (const auto &cluster : cluster_indices) {
+    if (cluster.size() > maxSize || cluster.size() < minSize)
+      continue;
     typename pcl::PointCloud<PointT>::Ptr cloud_cluster(
         new pcl::PointCloud<PointT>);
     for (const auto &idx : cluster) {
